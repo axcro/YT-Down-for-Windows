@@ -54,11 +54,18 @@ namespace YouTube_Downloader
                 try
                 {
                     var video = youTube.GetVideo(link); // gets a Video object with info about the video
-                    File.WriteAllBytes(foldername + "\\" + video.FullName, video.GetBytes());
+                    if (File.Exists(foldername + "\\" + video.FullName)) ;
+                    //System.Windows.Forms.MessageBox.Show(foldername + "\\" + video.FullName + " Exists already, skipping");
+                    else
+                    {
+                        File.WriteAllBytes(foldername + "\\" + video.FullName, video.GetBytes());
+                        //System.Windows.Forms.MessageBox.Show(foldername + "\\" + video.FullName + " being created!");
+                    }
                 }
                 catch
                 {
-                    System.Windows.Forms.MessageBox.Show(numb.ToString());
+                    //System.Windows.Forms.MessageBox.Show(numb.ToString());
+                    numb--;
                 }
                 numb++;
                 //System.Windows.Forms.MessageBox.Show(numb + " Done");

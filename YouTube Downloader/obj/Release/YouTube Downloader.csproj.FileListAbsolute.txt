@@ -1,0 +1,15 @@
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\bin\Release\YouTube Downloader.exe.config
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\bin\Release\YouTube Downloader.exe
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\bin\Release\YouTube Downloader.pdb
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\bin\Release\libvideo.compat.dll
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\bin\Release\libvideo.dll
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\MainWindow.g.cs
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\App.g.cs
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader_MarkupCompile.cache
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader_MarkupCompile.lref
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\MainWindow.baml
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.g.resources
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube_Downloader.Properties.Resources.resources
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.csproj.GenerateResource.Cache
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.exe
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.pdb

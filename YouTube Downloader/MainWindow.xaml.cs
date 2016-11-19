@@ -25,7 +25,7 @@ namespace YouTube_Downloader
     public partial class MainWindow : Window
     {
         public List<string> links = new List<string>();
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -54,24 +54,29 @@ namespace YouTube_Downloader
                 try
                 {
                     var video = youTube.GetVideo(link); // gets a Video object with info about the video
+                    string videoName = video.FullName;
+                    videoName = videoName.Replace(" - YouTube", "");
+
                     if (File.Exists(foldername + "\\" + video.FullName)) ;
                     //System.Windows.Forms.MessageBox.Show(foldername + "\\" + video.FullName + " Exists already, skipping");
                     else
                     {
-                        File.WriteAllBytes(foldername + "\\" + video.FullName, video.GetBytes());
+                        File.WriteAllBytes(foldername + "\\" + videoName, video.GetBytes());
                         //System.Windows.Forms.MessageBox.Show(foldername + "\\" + video.FullName + " being created!");
                     }
                 }
                 catch
                 {
                     //System.Windows.Forms.MessageBox.Show(numb.ToString());
-                    numb--;
+                    //numb--;
+                    string failed = "failed";
                 }
                 numb++;
                 //System.Windows.Forms.MessageBox.Show(numb + " Done");
             }
             //link = "https://www.youtube.com/watch?v=wfMi1Ij8KB0";            
             //File.WriteAllBytes(@"C:\Test\" + video.FullName, video.GetBytes());
+            System.Windows.Forms.MessageBox.Show("Completed!");
         }
 
         public static List<string> ParseLinks(string fileName)
@@ -86,7 +91,7 @@ namespace YouTube_Downloader
                 }
                 file.Close();
                 return (linkList);
-            }                
+            }
         }
 
 

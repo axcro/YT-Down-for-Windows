@@ -46,11 +46,16 @@ namespace YouTube_Downloader
             string foldername;
             foldername = odlg.SelectedPath;
 
-            int numb = 0;
+            string logPath = foldername + "\\log.txt";
+            StreamWriter outputFile = new StreamWriter(logPath);
+            outputFile.WriteLine("Begin Log:\n");
+
+            int numb = 1, numbDone=0;
 
             foreach (string link in links)
             {
                 var youTube = YouTube.Default; // starting point for YouTube actions
+                numb++;
                 try
                 {
                     var video = youTube.GetVideo(link); // gets a Video object with info about the video
@@ -64,19 +69,17 @@ namespace YouTube_Downloader
                         File.WriteAllBytes(foldername + "\\" + videoName, video.GetBytes());
                         //System.Windows.Forms.MessageBox.Show(foldername + "\\" + video.FullName + " being created!");
                     }
+                    numbDone++;
                 }
                 catch
                 {
-                    //System.Windows.Forms.MessageBox.Show(numb.ToString());
-                    //numb--;
-                    string failed = "failed";
+                    outputFile.WriteLine("Link #" + numb.ToString() + " Failed\n");
+                    outputFile.WriteLine(link);
+                    outputFile.WriteLine("\n\n");
                 }
-                numb++;
-                //System.Windows.Forms.MessageBox.Show(numb + " Done");
             }
-            //link = "https://www.youtube.com/watch?v=wfMi1Ij8KB0";            
-            //File.WriteAllBytes(@"C:\Test\" + video.FullName, video.GetBytes());
             System.Windows.Forms.MessageBox.Show("Completed!");
+            outputFile.Close();
         }
 
         public static List<string> ParseLinks(string fileName)

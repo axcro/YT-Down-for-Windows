@@ -13,3 +13,4 @@ C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Dow
 C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.csproj.GenerateResource.Cache
 C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.exe
 C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.pdb
+C:\Users\Alex\Google Drive\Projects\YT Down\x240\YT-Down-for-Windows\YouTube Downloader\obj\Release\YouTube Downloader.csprojResolveAssemblyReference.cache
